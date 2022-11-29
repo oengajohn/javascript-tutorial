@@ -102,8 +102,7 @@ function getName(){
 getName() // Casey
 
 ```
-### objects
-### Strings
+
 
 
 
@@ -112,3 +111,137 @@ getName() // Casey
 ## Conditional flows
 
 ## Data types
+```javascript
+    // Number
+    let count= 10;
+    let rate = 12.53;
+    //String
+    let studentName = "KipNg'etich"
+     let studentName = 'KipNg\'etich';
+    //Objects
+    let student = {};//empty object
+    let studentOne = {
+        //key:value pair
+        age:12,
+        name: "Winfred",
+        address:{
+           city:"Nairobi"
+           postaCode: "047" 
+        },
+        getFullName:function(){
+           return "Winfred"; 
+        },
+        anothorFun: ()=>{
+            console.log("something");
+        },
+        isMoving:function(){
+            return true;
+        }
+
+
+    };
+    let studentThree = new Object();
+
+
+    //referencing the properties
+console.log(studentOne.name);
+console.log(studentOne['name']);
+console.log(studentOne.address.city);
+
+studentOne.getFullName();
+studentOne.anothorFun();
+
+
+```
+
+### Booleans
+```javascript
+//move
+let isMoving =true;
+let isNotMoving = false;
+
+let a=10;
+let b=20;
+
+let isTenGreaterThanTwenty = a > b;
+
+```
+
+### Arrays
+```javascript
+// collection of data 
+let studentOne={
+    age:10,
+    name:"John"
+};
+let studentTwo={
+    age:12,
+    name:"student two"
+};
+let studentThree={
+    age:15,
+    name:"student three"
+};
+let studentFour={
+    age:20,
+    name:"Four"
+};
+//indexing starts from 0,1....
+let students = [studentOne,studentTwo,studentThree,studentFour];
+
+students[2] // studentThree
+
+
+```
+### Knowing the type of variable
+
+```javascript
+
+typeof //
+let studentFour={
+    age:20,
+    name:"Four"
+};
+
+typeof studentFour;//object
+
+typeof studentFour.age //Number
+
+```
+
+### Empty variables and Undefined and null
+
+```javascript
+    let studentName =""; //empty values
+    let age=null;//null'
+    let fullName; //undefined
+
+```
+
+## Naming Conventions
+```javascript
+
+camelCase
+
+
+//class  Country
+//variable country
+
+//studentName 
+//student_name // not encouraged
+
+// getDicountGivenTheRate()
+//getDiscount()
+
+//processPayroll()
+
+
+
+
+```
+
+
+
+
+
+
