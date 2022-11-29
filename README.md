@@ -241,6 +241,11 @@ camelCase
 ```
 
 
+### References
+- [x] [Visual Studio Code](https://code.visualstudio.com/download)
+- [x] [Sencha trial](https://www.sencha.com/products/extjs/evaluate/)
+- [x] [Sencha CMD ](https://www.sencha.com/products/extjs/cmd-download/)
+- [x] [Json Place holder](https://jsonplaceholder.typicode.com/)
 
 
 
