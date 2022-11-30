@@ -248,5 +248,32 @@ camelCase
 - [x] [Json Place holder](https://jsonplaceholder.typicode.com/)
 
 
+## EXTJS GGUIDE
 
+### Prerequisites
+- [x] Sencha cmd
+- [x] EXTJS Zip
 
+### Creation of a project
+```console
+# sencha -sdk /path/to/sdk generate app MyApp /path/to/myapp
+#  sencha generate app --ext MyApp ./MyApp
+
+# sencha generate app --ext PlaceHolder C:\Users\gavan\OneDrive\Desktop\workspace\forks\Javascript-TutorialS\PlaceHolder --classic
+
+##universal -classic and modern together
+sencha -sdk C:\Users\gavan\bin\Sencha\Cmd\repo\extract\ext\7.6.0.41  generate app PlaceHolder ./PlaceHolder
+
+##classic
+sencha -sdk C:\Users\gavan\bin\Sencha\Cmd\repo\extract\ext\7.6.0.41  generate app PlaceHolder C:\Users\gavan\OneDrive\Desktop\workspace\forks\Javascript-TutorialS\PlaceHolder --classic
+
+##Modern
+sencha -sdk C:\Users\gavan\bin\Sencha\Cmd\repo\extract\ext\7.6.0.41  generate app PlaceHolder C:\Users\gavan\OneDrive\Desktop\workspace\forks\Javascript-TutorialS\PlaceHolder --modern
+
+```
+
+### Starting the development Server
+```console 
+# locahost:1841
+sencha app watch
+````
