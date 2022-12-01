@@ -277,3 +277,24 @@ sencha -sdk C:\Users\gavan\bin\Sencha\Cmd\repo\extract\ext\7.6.0.41  generate ap
 # locahost:1841
 sencha app watch
 ````
+
+
+### Defining Store
+- To define a store 
+
+```javascript
+// alias property
+alias: 'store.storename'
+
+```
+
+### Defining views
+- To define a view 
+
+```javascript
+// xtype property
+alias: 'widget.viewname',
+xtype: 'viewname',
+
+
+```

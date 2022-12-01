@@ -10,17 +10,27 @@ Ext.define('PlaceHolder.view.main.MainView', {
         items: [{
                 //object type to instantiate
                 xtype: 'panel',
-                title: 'My first Panel'
+                title: 'Todos',
+                items: [{
+                    xtype: 'todogrid'
+                }]
             },
             {
                 //object type to instantiate
                 xtype: 'panel',
-                title: 'My Second Panel'
+                title: 'Albums',
+                //Albums
+                items: [
+                    // albumsgrid
+                ]
             },
             {
                 //object type to instantiate
                 xtype: 'panel',
-                title: 'My Third Panel'
+                title: 'Posts',
+                items: [
+                    //postsgrid
+                ]
             }
 
         ]
