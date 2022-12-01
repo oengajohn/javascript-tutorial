@@ -14,5 +14,5 @@ Ext.application({
     ],
 
     // The name of the initial view to create.
-    mainView: 'PlaceHolder.view.main.Main'
+    mainView: 'PlaceHolder.view.main.MainView'
 });
