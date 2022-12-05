@@ -298,3 +298,36 @@ xtype: 'viewname',
 
 
 ```
+
+### Containers
+| Class Name   | xtype  | 	Description |
+|---|---|--|
+| `Ext.container.Viewport`  | `viewport`  | ViewPort is a specialized container representing the viewable application area (the browser viewport). Generally there is a single ViewPort in an Ext JS application which will define the application's main areas like north, west, south, east and center. |
+| `container`  | `container`  |Container is lightweight container which provides basic functionality of containing items, namely adding, inserting and removing items. So use this container when you just want to add other components and arrange them.  |
+| `Ext.panel.Panel`  |`panel`   |Panel is a special type of container that has specific functionality and components. Each panel has header, tool, body, toolbar components. So use Panel when you want specific user interface with header, toolbar and body part. Do not use it if you do not want these features in panel, use container instead  |
+|`Ext.form.Panel`   | `form`  |Ext.form.Panel provides standard containers for form. Use it when you want standard application form kind of user interface. |
+| `Ext.form.FieldContainer`  | `fieldcontainer`  | FieldContainer implements labelable mixins so that it can be rendered with label and error message around every sub-item component. You can use fieldcontainer in the form to arrange inner fields. |
+| `Ext.form.FieldSet`  | `fieldset`  | Fieldset is a container for group of fields in an Ext.form.Panel. |
+| `Ext.grid.Panel`  | 	`grid`  | Grid displays large amount of tabular data with sorting, filtering and other functionality |
+| `Ext.container.ButtonGroup`  | `buttongroup`  | ButtonGroup provides a container for arranging a group of related Buttons in a tabular manner |
+| `Ext.tab.Panel`  | 	`tabpanel`  | Ext.tab.Panel is a basic tab container. Use it when you want tab or wizard in your user interface. |
+|`Ext.tree.Panel`   | `treepanel`  | TreePanel provides tree-structured UI representation of tree-structured data. |
+|`Ext.menu.Menu`   |  `menu` |Menu is a container to which you can add Menu Items.  |
+|`Ext.toolbar.Toolbar`   | 	`toolbar`  | 	Toolbar is a container for toolbar buttons, text, fill, item etc. |
+
+
+### Layouts
+| Layout  |  Description |
+|---|---|
+|Absolute   |This layout inherits anchor layout and adds the ability of positioning the component at particular co-ordinates using standard x, y config options.   |
+| Accordion  |  This layout manages multiple panels in an expandable accordion style. By default one panel can be expanded at any given time, but you can also expand multiple panels using multi config. |
+| Anchor  |  This layout enables anchoring of contained elements relative to the container's dimensions |
+| Auto  |  This layout is applicable when no layout is configured into a container. AutoLayout provides only a passthrough of any layout calls to any child containers. |
+| Border  | This is a multi-pane, application-oriented UI layout style that supports multiple nested panels, automatic bars between regions and built-in expanding and collapsing of regions.  |
+|  Card | This layout manages multiple child Components, each fitted to the Container, where only a single child Component can be visible at any given time. This layout style is most commonly used for wizards and tab implementations  |
+| Fit  |  This layout is used in a container that contains a single item that automatically expands to fill the container. |
+| Form  |This is a layout that will render form Fields, one under the other all stretched to the Container width. |
+| HBox  | 	A layout that arranges items horizontally across a Container. align, flex and pack are important config options for this layout. |
+| Table  | This layout allows you to easily render content into an HTML table. |
+| VBox  | A layout that arranges items vertically down a Container. align, flex and pack are important config options for this layout. |
+
