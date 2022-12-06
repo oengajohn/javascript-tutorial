@@ -14,7 +14,7 @@ Ext.define('PlaceHolder.view.posts.PostFormController', {
         let form = references['postdetailsform'].getForm(); // get the form
         form.submit({
             method: 'POST',
-            url: 'http://localhost:3000/posts',
+            url: 'http://localhost:3000/posts', //actual endpoint
             success: function (form, action) {
                 alert("saved sucessfully" + action.result)
             },

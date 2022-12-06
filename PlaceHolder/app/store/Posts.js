@@ -8,7 +8,7 @@ Ext.define('PlaceHolder.store.Posts', {
         url: 'http://localhost:3000/posts',
         reader: {
             type: 'json',
-            totalProperty: 'totalCount',
+            totalProperty: 'totalCount', //
             rootProperty: 'rows'
 
         }
