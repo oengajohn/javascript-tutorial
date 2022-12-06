@@ -6,13 +6,13 @@ Ext.define('PlaceHolder.view.posts.PostGrid', {
     store: {
         type: 'posts',
     },
-    features: [{
-            ftype: 'grouping',
-            startCollapsed: true,
-            groupHeaderTpl: '{columnName}: {name} ({rows.length} Post{[values.rows.length > 1 ? "s" : ""]})'
-        },
+    // features: [{
+    //         ftype: 'grouping',
+    //         startCollapsed: true,
+    //         groupHeaderTpl: '{columnName}: {name} ({rows.length} Post{[values.rows.length > 1 ? "s" : ""]})'
+    //     },
 
-    ],
+    // ],
 
     selModel: 'checkboxmodel', ///alternative specifying the selection model
     columns: [{
@@ -25,7 +25,7 @@ Ext.define('PlaceHolder.view.posts.PostGrid', {
         },
         {
             text: 'Post ID', //* displayable label of the column
-            dataIndex: 'id'
+            dataIndex: '_id'
         },
         {
             text: 'Title', //* displayable label of the column

@@ -1,11 +1,12 @@
 Ext.define('PlaceHolder.model.Post', {
     extend: 'Ext.data.Model',
+    idProperty: '_id',
     fields: [{
             name: 'userId',
             type: 'integer'
         },
         {
-            name: 'id',
+            name: '_id',
             type: 'integer'
         },
         {
