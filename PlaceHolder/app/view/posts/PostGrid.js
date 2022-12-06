@@ -1,21 +1,18 @@
 Ext.define('PlaceHolder.view.posts.PostGrid', {
     extend: 'Ext.grid.GridPanel',
     xtype: 'postgrid',
+    //!define the controlling code
+    controller: 'postgridcontroller',
     store: {
         type: 'posts',
     },
-    // selModel: {
-    //     type: 'checkboxmodel', //rowmodel->default, cellmodel,dataviewmodel
-    //     mode: 'SINGLE' //MULTI->default
+    features: [{
+            ftype: 'grouping',
+            startCollapsed: true,
+            groupHeaderTpl: '{columnName}: {name} ({rows.length} Post{[values.rows.length > 1 ? "s" : ""]})'
+        },
 
-    // },
-    // features: [{
-    //         ftype: 'grouping',
-    //         startCollapsed: true,
-    //         groupHeaderTpl: '{columnName}: {name} ({rows.length} Post{[values.rows.length > 1 ? "s" : ""]})'
-    //     },
-
-    // ],
+    ],
 
     selModel: 'checkboxmodel', ///alternative specifying the selection model
     columns: [{
@@ -51,6 +48,59 @@ Ext.define('PlaceHolder.view.posts.PostGrid', {
         displayMsg: 'Display posts {0} - {1} of {2}',
         emptyMsg: 'No post to display',
     },
+    //top Bar
+
+    tbar: [
+
+        {
+            xtype: 'button',
+            text: 'Add new Post',
+            listeners: {
+                //! eventname:'functionName in the controller
+                click: 'onAddNewPost',
+                mouseover: 'onAddPostMouseOver'
+            }
+
+        },
+        {
+            xtype: 'button',
+            text: 'View Details',
+
+            //* registering default event handlers => click
+            handler: 'onViewDetails'
+
+
+        },
+        {
+            xtype: 'button',
+            text: 'Remove Selected',
+            hidden: true
+
+        },
+        {
+            xtype: 'textfield',
+            emptyText: 'Search',
+
+        },
+        {
+            xtype: 'tbfill'
+        },
+        {
+            xtype: 'button',
+            text: 'Third Last'
+        },
+        {
+            xtype: 'button',
+            text: 'Second Last'
+        },
+        {
+            xtype: 'button',
+            text: 'Last'
+        }
+
+    ]
+
+
 
 
 
