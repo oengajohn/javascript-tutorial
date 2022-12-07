@@ -30,6 +30,11 @@ Ext.define('PlaceHolder.view.posts.PostGridController', {
             xtype: 'postform' //symbolic name
         });
         //load form details using the id
+    },
+    onFormFiledsDemo: function (btn, e, eOpts) {
+        Ext.create({
+            xtype: 'formwindow' //symbolic name
+        });
     }
 
 });

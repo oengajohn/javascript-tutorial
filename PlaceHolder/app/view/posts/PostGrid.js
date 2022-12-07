@@ -87,7 +87,9 @@ Ext.define('PlaceHolder.view.posts.PostGrid', {
         },
         {
             xtype: 'button',
-            text: 'Third Last'
+            text: 'Form Fields',
+            handler: 'onFormFiledsDemo'
+
         },
         {
             xtype: 'button',

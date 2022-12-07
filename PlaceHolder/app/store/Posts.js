@@ -8,8 +8,8 @@ Ext.define('PlaceHolder.store.Posts', {
         url: 'http://localhost:3000/posts',
         reader: {
             type: 'json',
-            totalProperty: 'totalCount', //
-            rootProperty: 'rows'
+            totalProperty: 'totalCount', //define the key holding the total count
+            rootProperty: 'rows' //key containing the array data
 
         }
     },
