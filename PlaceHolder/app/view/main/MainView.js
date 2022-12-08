@@ -10,6 +10,15 @@ Ext.define('PlaceHolder.view.main.MainView', {
         items: [{
                 //object type to instantiate
                 xtype: 'panel',
+                title: 'Users',
+                scrollable: true, // make scrolling bars available
+                items: [{
+                    xtype: 'usergrid'
+                }]
+            },
+            {
+                //object type to instantiate
+                xtype: 'panel',
                 title: 'Posts',
                 scrollable: true, // make scrolling bars available
                 items: [{

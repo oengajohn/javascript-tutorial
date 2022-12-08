@@ -19,11 +19,16 @@ Ext.define('PlaceHolder.store.Todos', {
     //! proxy
 
     proxy: {
-        url: 'https://jsonplaceholder.typicode.com/todos/',
         type: 'rest',
+        url: 'http://3.126.66.68:3000/todos',
+        // headers: {
+        //     "My Custom Header": new Date()
+        // },
         reader: {
             type: 'json',
-            // rootProperty
+            totalProperty: 'totalCount', //define the key holding the total count
+            rootProperty: 'rows' //key containing the array data
+
         }
     },
     //* initiate the request to get data automaticall on application load

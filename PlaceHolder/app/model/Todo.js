@@ -1,13 +1,13 @@
 Ext.define('PlaceHolder.model.Todo', {
     extend: 'Ext.data.Model',
-
+    idProperty: '_id',
     //! fields
     fields: [{
             name: 'userId',
             type: 'integer'
         },
         {
-            name: 'id',
+            name: '_id',
             type: 'integer'
         },
         {
