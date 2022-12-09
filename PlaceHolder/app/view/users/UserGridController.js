@@ -15,5 +15,28 @@ Ext.define('PlaceHolder.view.users.UserGridController', {
 
 
     },
-    onAddNewUser: function () {}
+    onAddNewUser: function () {
+        this.showForm(null);
+    },
+    onViewDetails: function () {
+        let userId = 1;
+        this.showForm(userId);
+    },
+    showForm: function (userId) {
+        Ext.create({
+            xtype: 'userformwindow'
+        });
+        //if userId is not null -> prefill the form with data
+    },
+
+    onAddNewUserWithColumns: function () {
+        Ext.create({
+            xtype: 'usermulticolumnwindowform',
+        });
+    },
+    onAddNewUserWithVboxHbox: function () {
+        Ext.create({
+            xtype: 'userformwithhboxandvbox',
+        });
+    },
 });

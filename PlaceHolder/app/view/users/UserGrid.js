@@ -85,8 +85,25 @@ Ext.define('PlaceHolder.view.users.UserGrid', {
         emptyMsg: 'No Record to display',
     },
     tbar: [{
-        text: 'Add new User',
-        iconCls: 'x-fa fa-plus',
-        handler: 'onAddNewUser'
-    }]
+            text: 'Add new User',
+            iconCls: 'x-fa fa-plus',
+            handler: 'onAddNewUser'
+        },
+        {
+            text: 'Add new User with Columns',
+            iconCls: 'x-fa fa-plus',
+            handler: 'onAddNewUserWithColumns'
+        },
+        {
+            text: 'Add new User with Vbox and HBox',
+            iconCls: 'x-fa fa-plus',
+            handler: 'onAddNewUserWithVboxHbox'
+        },
+
+        {
+            text: 'View Details',
+            iconCls: 'x-fa fa-eye',
+            handler: 'onViewDetails'
+        }
+    ]
 });
