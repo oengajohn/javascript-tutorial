@@ -7,12 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+    <form id="postform" action="https://jsonplaceholder.typicode.com/posts" method="post" onsubmit="">
         <input type="number" name="userId" id="userId">
         <input type="number" name="postId" id="postId">
         <input type="text" name="title" id="title">
         <input type="text" name="body" id="body">
         <button type="submit">Submit</button>
     </form>
+    <script>
+        let form = document.getElementById('postform');
+       
+    </script>
 </body>
 </html>

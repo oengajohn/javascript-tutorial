@@ -12,6 +12,8 @@ Ext.define('PlaceHolder.view.users.UserFormWindow', {
     margin: '12px',
     items: [{
             xtype: 'form',
+            id: 'userform',
+            reference: 'myformreference',
             scrollable: true,
             //defaults the configs 
             defaults: {
@@ -26,7 +28,7 @@ Ext.define('PlaceHolder.view.users.UserFormWindow', {
                     items: [{
                             xtype: 'numberfield',
                             fieldLabel: 'User ID',
-                            name: '_id',
+                            name: 'id',
 
                         },
                         {
@@ -87,11 +89,13 @@ Ext.define('PlaceHolder.view.users.UserFormWindow', {
                             },
                             items: [{
                                     xtype: 'textfield',
-                                    name: 'lat'
+                                    name: 'lat',
+                                    emptyText: 'Latitude e.g -12.78989949'
                                 },
                                 {
                                     xtype: 'textfield',
-                                    name: 'lng'
+                                    name: 'lng',
+                                    emptyText: 'Longitude e.g -12.78989949'
                                 },
                             ]
                         }
